@@ -196,7 +196,9 @@ include device/qcom/sepolicy/SEPolicy.mk
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 
 # Treble
+BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 BOARD_VNDK_VERSION := current
+PRODUCT_FULL_TREBLE_OVERRIDE := true
 
 # UEFI
 TARGET_USES_UEFI := true
